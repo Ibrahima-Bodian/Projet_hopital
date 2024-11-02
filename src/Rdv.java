@@ -11,5 +11,19 @@ public class Rdv {
         this.dateheure=dateheure;
     }
 
-    
+    public Patient getPatient(){
+        return this.patient;
+    }
+
+    public Medecin getMedecin(){
+        return this.medecin;
+    }
+
+    public LocalDateTime getDateTime(){
+        return this.dateheure;
+    }
+
+    public String toString(){
+        return "[Le patient : " + patient + " Le medecin : "+ " Date et heure de RDV : " + dateheure + " ]";
+    }
 }
